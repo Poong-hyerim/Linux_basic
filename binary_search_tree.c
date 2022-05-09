@@ -267,6 +267,15 @@ Node* searchIterative(Node* head, int key)
 	}
 	return NULL;
 }
+void freeNode(Node* ptr)
+{
+
+	if(ptr) {
+		freeNode(ptr->left);
+		freeNode(ptr->right);
+		free(ptr);
+	}
+}
 /* f8.트리에 해당된 메모리 해제 */
 int freeBST(Node* head)
 {
