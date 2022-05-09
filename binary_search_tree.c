@@ -23,6 +23,7 @@ int freeBST(Node* head); 					/* f8.트리에 해당된 메모리 해제 */
 
 int main()
 {
+	printf("[----- [풍혜림]  [2019020028] -----]");
 	char command;
 	int key;
 	Node* head = NULL;
@@ -269,7 +270,7 @@ Node* searchIterative(Node* head, int key)
 }
 void freeNode(Node* ptr)
 {
-
+	//ptr이 NULL이 아니면, freeNode를 재귀호출
 	if(ptr) {
 		freeNode(ptr->left);
 		freeNode(ptr->right);
