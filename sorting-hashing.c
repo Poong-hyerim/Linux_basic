@@ -38,6 +38,7 @@ int search(int *ht, int key);
 
 int main()
 {
+	printf("[-----  [풍혜림]  [2019020028]-----]")
 	char command;
 	int *array = NULL;
 	int *hashtable = NULL;
